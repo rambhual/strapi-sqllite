@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "published": {
+      "type": "boolean"
+    }
+  },
+  "connection": "default",
+  "collectionName": "products"
+}
