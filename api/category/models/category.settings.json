@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "categories",
   "info": {
     "name": "category"
   },
@@ -9,14 +11,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "image": {
-      "collection": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
     }
-  },
-  "connection": "default",
-  "collectionName": "categories"
+  }
 }
